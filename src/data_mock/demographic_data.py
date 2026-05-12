@@ -54,8 +54,10 @@ def create_fake_demographic_data(
         bmi = round(random.uniform(18.0, 40.0), 1)
         # Create fake age values ranging from 22 to 37
         age = random.randint(22, 37)
+        # Create fake gender values
+        sex = random.choice(["M", "F"])
 
-        rows.append({"subject_id": sid, "bmi": bmi, "age": age})
+        rows.append({"subject_id": sid, "bmi": bmi, "age": age, "sex": sex})
 
     # synthesize the data into a DataFrame
     df = pd.DataFrame(rows)
