@@ -22,15 +22,38 @@ def create_fake_demographic_data(
 
     rows = []
 
+
     for sid in subject_ids:
         # Create fake BMI values ranging from 18 to 40
         bmi = round(random.uniform(18.0, 40.0), 1)
+
         # Create fake age values ranging from 22 to 37
         age = random.randint(22, 37)
+
         # Create fake gender values
         sex = random.choice(["M", "F"])
 
-        rows.append({"subject_id": sid, "bmi": bmi, "age": age, "sex": sex})
+        # Create fake school values ranging from 0 to 10
+        school = random.randint(0, 10)
+
+        # Create fake physical activity values ranging from 1 to 5
+        physical = random.randint(1, 5)
+
+        # Create fake tobacco usage values (0 or 1)
+        tobacco = random.randint(0, 1)
+
+        # Create fake income values ranging from 0 to 9
+        income = random.randint(0, 9)
+
+        rows.append({
+            "subject_id": sid,
+            "bmi": bmi,
+            "age": age,
+            "sex": sex,
+            "school": school,
+            "physical": physical,
+            "tobacco": tobacco,
+            "income": income})
 
     # synthesize the data into a DataFrame
     df = pd.DataFrame(rows)
@@ -42,7 +65,7 @@ def create_fake_demographic_data(
 
 if __name__ == "__main__":
     # Update this to your actual data directory
-    data_dir = None # e.g., "/path/to/your/data/directory" 
+    data_dir = "/Users/vitorbronde/Documents/DSI" 
     if data_dir is None: 
         data_dir = look_for_data_dir()
         
