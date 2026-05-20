@@ -24,8 +24,8 @@ BMIA_IMCV_Connoctometry/
 │   ├── *.sz
 │   └── ...
 │
-├── scripts/
-│   ├── generate_fake_demographics.py
+├── src/
+│   ├── data_mock/generate_fake_demographics.py
 │   └── ...
 │
 ├── results/
