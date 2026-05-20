@@ -65,7 +65,7 @@ def create_fake_demographic_data(
 
 if __name__ == "__main__":
     # Update this to your actual data directory
-    data_dir = "/Users/vitorbronde/Documents/DSI" 
+    data_dir = None # e.g., "/path/to/your/data/directory" 
     if data_dir is None: 
         data_dir = look_for_data_dir()
         
