@@ -22,11 +22,11 @@ BMIA_IMCV_Connoctometry/
 │   ├── *.qsdr.fz
 │   ├── *.gqi.fz
 │   ├── *.sz
-│   └── ...
+│   └── demographics.csv
 │
 ├── src/
 │   ├── data_mock/generate_fake_demographics.py
-│   └── ...
+│   └── analysis
 │
 ├── results/
 │   └── ...
@@ -38,3 +38,11 @@ BMIA_IMCV_Connoctometry/
 │
 └── requirements.txt
 ```
+
+## Preprare environment
+
+Install python libs:
+```
+pip install -r requirements.txt
+```
+
