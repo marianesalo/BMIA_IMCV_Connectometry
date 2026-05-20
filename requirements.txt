@@ -1,0 +1,7 @@
+matplotlib==3.10.9
+numpy==2.4.6
+openneuro-py==2026.4.1
+pandas==3.0.3
+pillow==12.2.0
+reportlab==4.5.1
+scipy==1.17.1
