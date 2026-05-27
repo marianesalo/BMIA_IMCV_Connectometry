@@ -392,25 +392,6 @@ class AautomatedReporting:
 
         elements.append(Spacer(1, 20))
 
-        # Conclusion paragraph
-        conclusion = Paragraph(
-            """
-            The connectometry pipeline executed successfully
-            using diffusion MRI local connectome data and
-            configurable demographic study variables.
-
-            This demonstrates:
-            <br/><br/>
-            - successful DSI Studio processing<br/>
-            - successful demographic integration<br/>
-            - automated statistical summarization<br/>
-            - reproducible reporting generation
-            """,
-            self.styles["BodyText"]
-        )
-
-        elements.append(conclusion)
-
         # build the pdf
         doc.build(elements)
         print(f"PDF report saved to:\n{pdf_path}")
@@ -431,7 +412,6 @@ class AautomatedReporting:
 
 
 if __name__ == "__main__":
-    # CONFIGURATION - UPDATE THESE PATHS AND VARIABLES AS NEEDED
     # put here the path for your repository root (where you have the data and src folders)
     REPO_ROOT = None # /path/to/your/repo/root
     if REPO_ROOT is None:
