@@ -277,9 +277,8 @@ class AautomatedReporting:
         elements.append(title)
         elements.append(Spacer(1, 20))
 
-        # ======================================================
+
         # INTRODUCTION
-        # ======================================================
         intro = Paragraph(
             """
             This report summarizes a DSI Studio connectometry
@@ -291,7 +290,10 @@ class AautomatedReporting:
             - demographic variable ingestion<br/>
             - statistical connectometry analysis<br/>
             - automated summary generation<br/>
-            - visualization of study variable distributions
+            - visualization of study variable distributions<br/>
+
+            However this is just an example with mocked demographic data
+            so we should not consider the results as a reality
             """,
             self.styles["BodyText"]
         )
